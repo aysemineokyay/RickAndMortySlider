@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick And Morty Slide</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+    <style>
+        body {
+            background-color:rgb(61, 57, 57)
+    
+        } 
+        #header{
+            text-align: center;
+            color: white;
+        }
+        #image-carousel{
+            margin: auto;
+            width: 80%;
+        }
+        .splide__slide{
+            margin:80px 0px 40px; 
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+        }
+        .splide__slide img{
+            box-sizing: border-box;
+            width: 90%;
+            position: relative;
+        }
+        .splide__slide p{
+            margin: 0px;
+            position: absolute;
+            background-color: black;
+            opacity: 0.8;
+            color:white;
+            border: 1px solid transparent;
+            padding: 4%;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            align-self: flex-end;
+        }
+        .splide__arrow{
+            margin-inline: 1%;
+        }
+        p .status{
+            display: flex;
+            align-items: center;
+            gap:5px;
+        }
+        .square_green{
+            width: 7px;
+            height: 7px;
+            background-color: green;
+            border-radius: 50%;
+            display: inline-block;  
+        }
+        .square_white{
+            width: 7px;
+            height: 7px;
+            background-color: white;
+            border-radius: 50%;
+            display: inline-block;  
+        } 
+        .square_red{
+            width: 7px;
+            height: 7px;
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;  
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">Rick And Morty Slider</h1>
+    <div class="splide" id="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+            <ul class="splide__list">
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+      <script src="./main.js"></script>
+</body>
+</html>
